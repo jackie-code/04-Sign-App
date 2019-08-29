@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Sign App</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="app">
+
+	<div class="display-wrapper">
+		<span class="name-display" id="name">Your Name Here</span>
+		<ul class="cost-details">
+			<li class="cost-detail">Letters cost : <span id="lettersCostDisplay">X.XX</span></li>
+			<li class="cost-detail">Special chars cost : <span id="specialCharsCostDisplay">X.XX</span></li>
+			<li class="cost-detail">Tax cost : <span id="taxCostDisplay">X.XX</span></li>
+			<li class="cost-detail">Shipping cost : <span id="shippingCostDisplay">X.XX</span></li>
+			<li class="cost-detail">Sub Total : <span id="subTotalDisplay">X.XX</span></li>
+			<li class="cost-detail">Grand Total : <span id="grandTotalDisplay">X.XX</span></li>
+		</ul>
+	</div>
+
+	<div class="inputs-wrapper">
+		<h2>Sign Inputs</h2>
+		<div class="form-group">
+      <label>Name</label>
+			<input type="text" class="form-control" name="name">
+		</div>
+		<div class="form-group">
+			<label>Select Font</label>
+			<select class="form-control" name="font-select">
+				<option value="Yellowtail">YelloTail</option>
+				<option value="Indie Flower">Indie Flower</option>
+				<option value="Satisfy">Satisfy</option>
+				<option value="Cookie">Cookie</option>
+				<option value="Shadows Into Light Two">Shadows</option>
+				<option value="Source Sans Pro">Source Sans</option>
+			</select>
+		</div>
+		<div class="form-group">
+      <label>Special Chars</label>
+			<input type="number" class="form-control" name="specialChars" value="0">
+		</div>
+		<div class="form-group">
+			<label>Shipping Options</label>
+			<select class="form-control" name="shipping">
+				<option value="2.99">Standard</option>
+				<option value="7.99">2 Day</option>
+				<option value="18.99">Next Day</option>
+			</select>
+		</div>
+		<button id="calculate" class="btn btn-primary btn-block">Calculate Costs</button>
+	</div>
+
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
